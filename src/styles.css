@@ -1,0 +1,19 @@
+/* You can add global styles to this file, and also import other style files */
+.title{
+    text-align: center;
+    font-size: xx-large;  
+}
+.logo-icon{
+    margin-left: 0px;
+}
+.sidebar{
+     overflow:hidden;
+    border-radius: 5px;
+    background-color: lightgray;
+}
+.btn-nav{
+    margin-right: 10px;
+}
+.responsive_table{
+    overflow:scroll;
+}

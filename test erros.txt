@@ -1,0 +1,167 @@
+● PlaceFitnessTrainerAppointmentComponent › boundary › age field validation toBeFalsy() toBeTruthy() 
+
+    expect(received).toBeTruthy()
+
+    Received: undefined
+
+      94 |       // age field is required
+      95 |       errors = age.errors || {};
+    > 96 |       expect(errors["required"]).toBeTruthy();
+         |                                  ^
+      97 | 
+      98 |       // Set age to something
+      99 |       age.setValue(0);
+
+      at src/app/place-fitness-trainer-appointment/place-fitness-trainer-appointment.component.spec.ts:96:34
+      at ZoneDelegate.invoke (node_modules/zone.js/dist/zone.js:391:26)
+      at ProxyZoneSpec.onInvoke (node_modules/zone.js/dist/proxy.js:129:39)
+      at ZoneDelegate.invoke (node_modules/zone.js/dist/zone.js:390:52)
+      at Zone.run (node_modules/zone.js/dist/zone.js:150:43)
+
+  ● PlaceFitnessTrainerAppointmentComponent › boundary › phonenumber field validation toBeFalsy() toBeTruthy() 
+
+    TypeError: Cannot read property 'valid' of undefined
+
+      110 |       let errors = {};
+      111 |       let phonenumber = component.fitnessForm.controls["phonenumber"];
+    > 112 |       expect(phonenumber.valid).toBeFalsy();
+          |                          ^
+      113 | 
+      114 |       // phonenumber field is required
+      115 |       errors = phonenumber.errors || {};
+
+      at src/app/place-fitness-trainer-appointment/place-fitness-trainer-appointment.component.spec.ts:112:26
+      at ZoneDelegate.invoke (node_modules/zone.js/dist/zone.js:391:26)
+      at ProxyZoneSpec.onInvoke (node_modules/zone.js/dist/proxy.js:129:39)
+      at ZoneDelegate.invoke (node_modules/zone.js/dist/zone.js:390:52)
+      at Zone.run (node_modules/zone.js/dist/zone.js:150:43)
+
+  ● PlaceFitnessTrainerAppointmentComponent › boundary › streetaddress field validation toBeFalsy() toBeTruthy() 
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      152 |       let errors = {};
+      153 |       let streetaddress = component.fitnessForm.controls["streetaddress"];
+    > 154 |       expect(streetaddress.valid).toBeFalsy();
+          |                                   ^
+      155 | 
+      156 |       // streetaddress field is required
+      157 |       errors = streetaddress.errors || {};
+
+      at src/app/place-fitness-trainer-appointment/place-fitness-trainer-appointment.component.spec.ts:154:35
+      at ZoneDelegate.invoke (node_modules/zone.js/dist/zone.js:391:26)
+      at ProxyZoneSpec.onInvoke (node_modules/zone.js/dist/proxy.js:129:39)
+      at ZoneDelegate.invoke (node_modules/zone.js/dist/zone.js:390:52)
+      at Zone.run (node_modules/zone.js/dist/zone.js:150:43)
+
+  ● PlaceFitnessTrainerAppointmentComponent › boundary › city field validation toBeFalsy() toBeTruthy() 
+
+    TypeError: Cannot read property 'valid' of undefined
+
+      172 |       let errors = {};
+      173 |       let city = component.fitnessForm.controls["city"];
+    > 174 |       expect(city.valid).toBeFalsy();
+          |                   ^
+      175 | 
+      176 |       // city field is required
+      177 |       errors = city.errors || {};
+
+      at src/app/place-fitness-trainer-appointment/place-fitness-trainer-appointment.component.spec.ts:174:19
+      at ZoneDelegate.invoke (node_modules/zone.js/dist/zone.js:391:26)
+      at ProxyZoneSpec.onInvoke (node_modules/zone.js/dist/proxy.js:129:39)
+      at ZoneDelegate.invoke (node_modules/zone.js/dist/zone.js:390:52)
+      at Zone.run (node_modules/zone.js/dist/zone.js:150:43)
+
+  ● PlaceFitnessTrainerAppointmentComponent › boundary › state field validation toBeFalsy() toBeTruthy() 
+
+    TypeError: Cannot read property 'valid' of undefined
+
+      192 |       let errors = {};
+      193 |       let state = component.fitnessForm.controls["state"];
+    > 194 |       expect(state.valid).toBeFalsy();
+          |                    ^
+      195 | 
+      196 |       // state field is required
+      197 |       errors = state.errors || {};
+
+      at src/app/place-fitness-trainer-appointment/place-fitness-trainer-appointment.component.spec.ts:194:20
+      at ZoneDelegate.invoke (node_modules/zone.js/dist/zone.js:391:26)
+      at ProxyZoneSpec.onInvoke (node_modules/zone.js/dist/proxy.js:129:39)
+      at ZoneDelegate.invoke (node_modules/zone.js/dist/zone.js:390:52)
+      at Zone.run (node_modules/zone.js/dist/zone.js:150:43)
+
+  ● PlaceFitnessTrainerAppointmentComponent › boundary › country field validation toBeFalsy() toBeTruthy() 
+
+    TypeError: Cannot read property 'valid' of undefined
+
+      212 |       let errors = {};
+      213 |       let country = component.fitnessForm.controls["country"];
+    > 214 |       expect(country.valid).toBeFalsy();
+          |                      ^
+      215 | 
+      216 |       // country field is required
+      217 |       errors = country.errors || {};
+
+      at src/app/place-fitness-trainer-appointment/place-fitness-trainer-appointment.component.spec.ts:214:22
+      at ZoneDelegate.invoke (node_modules/zone.js/dist/zone.js:391:26)
+      at ProxyZoneSpec.onInvoke (node_modules/zone.js/dist/proxy.js:129:39)
+      at ZoneDelegate.invoke (node_modules/zone.js/dist/zone.js:390:52)
+      at Zone.run (node_modules/zone.js/dist/zone.js:150:43)
+
+  ● PlaceFitnessTrainerAppointmentComponent › boundary › pincode field validation toBeFalsy() toBeTruthy() 
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      232 |       let errors = {};
+      233 |       let pincode = component.fitnessForm.controls["pincode"];
+    > 234 |       expect(pincode.valid).toBeFalsy();
+          |                             ^
+      235 | 
+      236 |       // pincode field is required
+      237 |       errors = pincode.errors || {};
+
+      at src/app/place-fitness-trainer-appointment/place-fitness-trainer-appointment.component.spec.ts:234:29
+      at ZoneDelegate.invoke (node_modules/zone.js/dist/zone.js:391:26)
+      at ProxyZoneSpec.onInvoke (node_modules/zone.js/dist/proxy.js:129:39)
+      at ZoneDelegate.invoke (node_modules/zone.js/dist/zone.js:390:52)
+      at Zone.run (node_modules/zone.js/dist/zone.js:150:43)
+
+  ● PlaceFitnessTrainerAppointmentComponent › boundary › inr field validation toBeFalsy() toBeTruthy() 
+
+    TypeError: Cannot read property 'valid' of undefined
+
+      251 |       let errors = {};
+      252 |       let inr = component.fitnessForm.controls["inr"];
+    > 253 |       expect(inr.valid).toBeFalsy();
+          |                  ^
+      254 | 
+      255 |       // inr field is required
+      256 |       errors = inr.errors || {};
+
+      at src/app/place-fitness-trainer-appointment/place-fitness-trainer-appointment.component.spec.ts:253:18
+      at ZoneDelegate.invoke (node_modules/zone.js/dist/zone.js:391:26)
+      at ProxyZoneSpec.onInvoke (node_modules/zone.js/dist/proxy.js:129:39)
+      at ZoneDelegate.invoke (node_modules/zone.js/dist/zone.js:390:52)
+      at Zone.run (node_modules/zone.js/dist/zone.js:150:43)
+
+  ● PlaceFitnessTrainerAppointmentComponent › boundary › paisa field validation toBeFalsy() toBeTruthy() 
+
+    TypeError: Cannot read property 'valid' of undefined
+
+      271 |       let errors = {};
+      272 |       let paisa = component.fitnessForm.controls["paisa"];
+    > 273 |       expect(paisa.valid).toBeFalsy();
+          |                    ^
+      274 | 
+      275 |       // paisa field is required
+      276 |       errors = paisa.errors || {};
+
+      at src/app/place-fitness-trainer-appointment/place-fitness-trainer-appointment.component.spec.ts:273:20
+      at ZoneDelegate.invoke (node_modules/zone.js/dist/zone.js:391:26)
+      at ProxyZoneSpec.onInvoke (node_modules/zone.js/dist/proxy.js:129:39)
+      at ZoneDelegate.invoke (node_modules/zone.js/dist/zone.js:390:52)
+      at Zone.run (node_modules/zone.js/dist/zone.js:150:43)

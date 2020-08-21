@@ -1,0 +1,120 @@
+
+<div>
+   <form [formGroup]="fitnessForm" (ngSubmit)="onClickSubmit(userServ.currentApp)">
+      <div class="form-group">
+         <div class="container">
+            <div class="row">
+               <input type="text" autofocus class="fortextbox form-control col-5" name="firstname" placeholder="Enter First Name"
+                  formControlName="firstname"  [(ngModel)]="userServ.currentApp.firstname">
+               <input type="text" class="fortextbox form-control col-5 ml-2" name="lastname"
+                  placeholder="Enter Last Name" formControlName="lastname" [(ngModel)]="userServ.currentApp.lastname">
+            </div>
+         </div>
+         <br>
+
+         <div class="container">
+            <div class="row">
+               <input type="text" class="fortextbox form-control col-3" name="age" placeholder="Enter your Age"
+                  formControlName="age" [(ngModel)]="userServ.currentApp.age">
+               <input type="text" class="fortextbox form-control col-4 ml-2" name="email" placeholder="Email"
+                  formControlName="email" [(ngModel)]="userServ.currentApp.email">
+               <input type="text" class="fortextbox form-control col-3 ml-2" name="phonenumber" placeholder="Phonenumber"
+                  formControlName="phonenumber" [(ngModel)]="userServ.currentApp.phonenumber">
+            </div>
+         </div>
+         <br>
+         <fieldset class="border p-3">
+            <legend class="w-auto">Address</legend>
+            <input type="text" class="fortextbox form-control" name="streetaddress" placeholder="Address"
+               formControlName="streetaddress" [(ngModel)]="userServ.currentApp.streetaddress">
+            <br>
+            <div class="container">
+               <div class="row">
+                  <input type="text" class="fortextbox form-control col-3" name="city" placeholder="City"
+                  formControlName="city" [(ngModel)]="userServ.currentApp.city">
+                  <input type="text" class="fortextbox form-control col-3 ml-2" name="state" placeholder="State"
+                  formControlName="state" [(ngModel)]="userServ.currentApp.state">
+                  <input type="text" class="fortextbox form-control col-3 ml-2" name="country" placeholder="Country"
+                  formControlName="country" [(ngModel)]="userServ.currentApp.country">
+               </div>
+            </div>
+            <br>
+            <input type="text" class="fortextbox form-control" name="pincode" placeholder="Pincode"
+               formControlName="pincode" [(ngModel)]="userServ.currentApp.pincode">
+         </fieldset>
+         <br>
+         <!--   <input type= class="fortextbox form-control" name="packages" placeholder="Package value"
+            formControlName="packages" [(ngModel)]="userServ.currentApp.packages"> -->
+         <div class="container">
+            <div class="row">
+               <label class="col-4 col-sm-3" >Package Preference :</label>
+               <select class="form-control col-2" name="packages" placeholder="Package value" formControlName="packages"
+                  [(ngModel)]="userServ.currentApp.packages" required>
+                  <option>---select package---</option>
+                  <option value="Platinum">Platinum</option>
+                  <option value="Gold">Gold</option>
+                  <option value="Silver">Silver</option>
+               </select>
+               <input type="text" class="fortextbox form-control col-2 ml-2" name="inr" placeholder="INR"
+               formControlName="inr" [(ngModel)]="userServ.currentApp.inr">
+               <input type="text" class="fortextbox form-control col-2 ml-2" name="paisa" placeholder="Paise"
+               formControlName="paisa" [(ngModel)]="userServ.currentApp.paisa">
+            </div>
+         </div>
+      </div>
+      <div class="container">
+         <div class="row">
+            <label class="col-3">Trainer Preference</label>
+            <select class="col-2 form-control" name="trainerpreference" formControlName="trainerpreference"
+               [(ngModel)]="userServ.currentApp.trainerpreference" required>
+               <option>---select choice---</option>
+               <option value="Male Trainer">Male Trainer</option>
+               <option value="Female Trainer">Female Trainer</option>
+            </select>
+            <label class="col-3">Physiotherapist Prefence</label>
+            <select class="col-2 ml-4 form-control" name="physiotherapist" formControlName="physiotherapist"
+               [(ngModel)]="userServ.currentApp.physiotherapist" required>
+               <option>---select choice---</option>
+               <option value="Yes">Yes</option>
+               <option value="No">No</option>
+            </select>
+         </div>
+      </div>
+      <br>
+      <div class="container">
+         <div class="row">
+            <button type="submit" [disabled]="!fitnessForm.valid" class="btn btn-success col-4">Submit</button>
+            <button type="reset" class="btn btn-primary col-4 ml-2" (click)="clear()">Clear</button>
+         </div>
+      </div>
+   </form>
+</div>
+
+
+
+
+<!-- <div> 
+    <form [formGroup] = "formdata" (ngSubmit) = "onClickSubmit(formdata.value)"> 
+        <div class="form-group">
+            <input type = "text" class = "fortextbox form-control" name = "email2" 
+            placeholder = "emailid" formControlName = "email2"> 
+         <br/>   
+       
+
+       <input type = "text" class = "fortextbox form-control" name = "email" 
+          placeholder = "emailid" formControlName = "email"> 
+       <br/> 
+     
+       <input type = "password" class = "fortextbox form-control" name = "passwd" 
+          placeholder = "passwd" formControlName = "passwd">
+       <br/> 
+
+       <input type="text" class="fortextbox form-control" name="fname" placeholder="fname"
+       for
+       
+       <input type = "submit" [disabled] = "!formdata.valid" class = "forsubmit" 
+          value = "Log In"> 
+        </div>   
+    </form> 
+ </div>
+ <p> Email entered is :</p> -->
